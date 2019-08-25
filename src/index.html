@@ -6,9 +6,55 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+    <h1>Bienvenido a Texto Secreto</h1>
+    <div>
+        <p>Para comenzar crea un codigo de 2 digitos numéricos que serán tu Código Secreto!! RECUÉRDALO!! porque con él podrás crear y leer tus mensajes secretos. </p>
+        <p>y ahora a jugar!!</p> 
+
     </div>
+    <section id = "crear mensaje">
+        <div>
+            <h1>Crear Mensaje</h1>
+        </div>
+        <div>
+            <p id= "off" >
+                <label for="1">Ingresa el código secreto de tu mensaje<label>
+                <input type="number" id="txNumero" placeholder="Ingrese un numero" max="99" required/>
+            </p> 
+            <p>*Recuerda sólo pueden ser 2 digitos numericos.</p>
+        </div>
+        <p>Escribe aquí el texto que deseas codificar</p>
+        <p id= "ctext" >
+            <textarea id=texto></textarea>
+        </p>
+        <button id="btnOk1" onclick="alertaNumero()">Ok</button>
+
+        <br>
+        <p>
+            <br>
+            <p>Este es tu Mensaje Secreto</p> 
+            <textarea id="mCodificado"></textarea>
+        </p>
+    </section>
+    <section id= "leer mensaje">
+        <h1>Leer Mensaje</h1>
+        <div>
+            <p>Ingresa el código secreto para Decodificar tu mensaje </p>
+            <input type="number" id="csecret" placeholder="22" name="offset" required />
+            <br>
+            <p> *Recuerda sólo pueden ser 2 digitos numericos.</p>
+        </div>
+        <p>Escribe aquí el texto codificado </p>
+        <p > <textarea id= "tcod"></textarea></p>
+        <br>
+        <button id="btn2" onclick="leerMensaje()">Decodificar</button>
+        <br>
+        <br>
+        <p> Este es tu Mensaje Secreto</p> 
+        <p id= "decod">
+            <textarea id="txtDecod"></textarea>
+        </p>
+    </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
