@@ -27,3 +27,33 @@ La interfaz permite al usuario:
 - Ver el resultado del mensaje cifrado.
 - Insertar un mensaje (texto) a descifrar.
 - Ver el resultado del mensaje descifrado.
+
+#### Diagrama de Flujo
+A nivel de programación la aplicación cuenta con los siguientes archivos:
+
+```text
+./
+├── Index.html
+├── index.js
+│  	└── interacción de la página
+├── cipher.js
+│  	└── lógica del programa
+└── styles.css
+```
+
+
+
+A nivel de usuario la página tiene esta estructura:
+
+```text
+./
+├── Home
+│       ├── Crear Texto
+│ 		         └── Codificar
+│       ├── Leer Texto
+│ 	        	 └── Decodificar
+└──
+```
+
+
+
