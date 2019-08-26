@@ -31,20 +31,29 @@ La interfaz permite al usuario:
 #### Diagrama de Flujo
 A nivel de programación la aplicación cuenta con los siguientes archivos:
 
+```text
+./
 ├── Index.html
 ├── index.js
 │  	└── interacción de la página
 ├── cipher.js
 │  	└── lógica del programa
 └── styles.css
+```
+
+
 
 A nivel de usuario la página tiene esta estructura:
 
+```text
+./
 ├── Home
 │       ├── Crear Texto
-│ 		        └── Codificar
+│ 		         └── Codificar
 │       ├── Leer Texto
-│ 		        └── Decodificar
+│ 	        	 └── Decodificar
 └──
+```
+
 
 
